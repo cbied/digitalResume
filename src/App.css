@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+/* App */
+body {
+  background-color: #212121;
+  color: #FFFFFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
+}
+
+/* About */
+.about {
+  background: linear-gradient(to bottom, #0000FF, #808080);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profilePicture {
+  background: url(./assets/happyCoder.jpg);
+  border-radius: 720px;
+  border: 4px solid #FFF;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+}
+
+.about--text {
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 18rem;
+}
+
+
+.resume {
+  background: url(./assets/resume.png);
+}
+
+.web {
+  background: url(./assets/web.png);
+}
+
+.github {
+  background: url(./assets/github.png);
+}
+
+
+.link {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 40%;
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -60px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Share */
+.share {
+  background: linear-gradient(to bottom, #808080, #000000);
+  height: 20vh;
+}
+
+/* Skills */
+.skills {
+  background-color: #000000;
+  height: 30vh;
 }
