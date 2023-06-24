@@ -1,13 +1,19 @@
+#root {
+  overflow-x: none;
+}
+
 /* App */
 body {
   background-color: #212121;
   color: #FFFFFF;
+  
 }
 
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  
 }
 
 /* About */
@@ -104,11 +110,38 @@ body {
 /* Share */
 .share {
   background: linear-gradient(to bottom, #808080, #000000);
-  height: 20vh;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
 }
+
+.share--heading {
+  text-align: center;
+}
+
+.share--text {
+  margin: 0.4rem;
+  text-align: center;
+}
+
+.share--text > span {
+  color: red;
+}
+
+.share::-webkit-scrollbar {
+  display: none; 
+}
+
+.contact {
+  display: flex;
+}
+
+
 
 /* Skills */
 .skills {
   background-color: #000000;
-  height: 30vh;
+  height: 20vh;
 }

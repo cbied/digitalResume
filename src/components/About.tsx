@@ -9,15 +9,19 @@ function About() {
             <h3 className='about--text'>Software Engineer</h3>
         </div>
         <div className="links">
-            <div className='link resume tooltip'>
+            {/* build pop up model for resume -- option to download */}
+            <a className='link resume tooltip'
+            href="https://google.com" target="_blank" rel="noreferrer">
                 <span className="tooltiptext">Resume</span>
-            </div>
-            <div className='link web tooltip'>
-            <span className="tooltiptext">Portflio</span>
-            </div>
-            <div className='link github tooltip'>
-            <span className="tooltiptext">Github</span>
-            </div>
+            </a>
+            <a className='link web tooltip'
+            href="https://google.com" target="_blank" rel="noreferrer">
+                <span className="tooltiptext">Portfolio</span>
+            </a>
+            <a className='link github tooltip'
+            href="https://github.com/cbied" target="_blank" rel="noreferrer">
+                <span className="tooltiptext">Github</span>
+            </a>
         </div>
     </div>
   );
