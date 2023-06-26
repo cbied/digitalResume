@@ -10,14 +10,15 @@ function About() {
         </div>
         <div className="links">
             {/* build pop up model for resume -- option to download */}
-            <a className='link resume tooltip'
-            href="https://google.com" target="_blank" rel="noreferrer">
-                <span className="tooltiptext">Resume</span>
-            </a>
             <a className='link web tooltip'
             href="https://google.com" target="_blank" rel="noreferrer">
                 <span className="tooltiptext">Portfolio</span>
             </a>
+            <a className='link resume tooltip'
+            href="https://google.com" target="_blank" rel="noreferrer">
+                <span className="tooltiptext">Resume</span>
+            </a>
+            
             <a className='link github tooltip'
             href="https://github.com/cbied" target="_blank" rel="noreferrer">
                 <span className="tooltiptext">Github</span>
