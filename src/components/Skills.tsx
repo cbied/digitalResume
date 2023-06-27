@@ -1,40 +1,14 @@
-// import { url } from 'inspector';
+import EmblaCarousel from "./EmblaCarousel";
 import '../App.css';
-import { SnapList, SnapItem } from 'react-snaplist-carousel';
-import IMAGES from '../assets/index'
 
-
+const slides = Array.from(Array(7).keys());
 function Skills() {
  
  
   return (
     <div className='skills--container'>
-      <SnapList  direction='horizontal' className='snapList'>
-        <SnapItem margin={{ left: '15px', right: '15px' }} snapAlign="center">
-            <img src={IMAGES.reactLogo} alt="" className='snap-item' />
-        </SnapItem>
-        <SnapItem margin={{ left: '15px', right: '15px' }} snapAlign="center">
-          <img src={IMAGES.redux} alt="" className='snap-item' />
-        </SnapItem>
-        <SnapItem margin={{ left: '15px', right: '15px' }} snapAlign="center">
-          <img src={IMAGES.typescript} alt="" className='snap-item' />
-        </SnapItem>
-        <SnapItem margin={{ left: '15px', right: '15px' }} snapAlign="center">
-          <img src={IMAGES.node} alt="" className='snap-item' />
-        </SnapItem>
-        <SnapItem margin={{ left: '15px', right: '15px' }} snapAlign="center">
-          <img src={IMAGES.express} alt="" className='snap-item' />
-        </SnapItem>
-        <SnapItem margin={{ left: '15px', right: '15px' }} snapAlign="center">
-          <img src={IMAGES.angular} alt="" className='snap-item' />
-        </SnapItem>
-        <SnapItem margin={{ left: '15px', right: '15px' }} snapAlign="center">
-          <img src={IMAGES.css} alt="" className='snap-item' />
-        </SnapItem>
-        <SnapItem margin={{ left: '15px', right: '15px' }} snapAlign="center">
-          <img src={IMAGES.html} alt="" className='snap-item' />
-        </SnapItem>
-      </SnapList>
+      <EmblaCarousel slides={slides} />
+
       <div className="contact">
         <h4>Phone: 410-508-4105</h4>
         <h4>Email: cabiediger@gmail.com</h4>

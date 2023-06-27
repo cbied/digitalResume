@@ -148,21 +148,6 @@ body {
   background: linear-gradient(to bottom, #000000, #808080);
 }
 
-.snapList {
-  display: flex;
-  flex-wrap: wrap;
-  max-height: 20vh;
-  overflow: scroll;
-}
-
-.snap-item {
-  width: 4rem;
-  height: 3rem;
-  margin-bottom: 1rem;
-  background-color: antiquewhite;
-  border-radius: 50%;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
