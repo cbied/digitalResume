@@ -8,7 +8,6 @@ function Skills() {
   return (
     <div className='skills--container'>
       <EmblaCarousel slides={slides} />
-
       <div className="contact">
         <h4>Phone: 410-508-4105</h4>
         <h4>Email: cabiediger@gmail.com</h4>

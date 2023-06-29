@@ -1,4 +1,5 @@
 import '../App.css';
+// import resumePDF from '../'
 
 function About() {
   return (
@@ -15,7 +16,7 @@ function About() {
                 <span className="tooltiptext">Portfolio</span>
             </a>
             <a className='link resume tooltip'
-            href="https://google.com" target="_blank" rel="noreferrer">
+            href={require('../assets/resumePDF.pdf')} target="_blank" rel="noreferrer">
                 <span className="tooltiptext">Resume</span>
             </a>
             
